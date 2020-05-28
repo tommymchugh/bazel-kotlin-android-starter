@@ -9,3 +9,5 @@ computer. Then run:
 ```shell
 bazel build //android:app
 ```
+
+Code by: Thomas McHugh
