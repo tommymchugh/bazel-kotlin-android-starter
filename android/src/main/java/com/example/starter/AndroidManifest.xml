@@ -24,7 +24,8 @@ limitations under the License.
       android:targetSdkVersion="26" />
 
   <application
-      android:label="Bazel Tutorial App">
+      android:label="Bazel Tutorial App"
+      android:theme="@style/AppTheme">
     <activity
         android:name=".MainActivity"
         android:label="Bazel Tutorial App" >
