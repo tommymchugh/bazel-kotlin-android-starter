@@ -1,7 +1,22 @@
 load("@rules_android//android:rules.bzl", "android_binary")
+load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_android_library")
+
+kt_android_library(
+    name = "lib",
+    srcs = [
+        "src/main/java/com/example/starter/MainActivity.kt"
+    ],
+    resource_files = glob(["src/main/java/com/example/starter/res/**/*"]),
+    custom_package = "com.example.starter",
+    manifest = "src/main/java/com/example/starter/AndroidManifest.xml",
+    deps = [
+        "@maven//:com_android_support_appcompat_v7",
+    ]
+)
 
 android_binary(
     name = "app",
+    deps = [":lib"],
     manifest = "src/main/AndroidManifest.xml",
     custom_package = "com.example.starter"
 )

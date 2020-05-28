@@ -14,10 +14,11 @@
  *  limitations under the License.
  */
 
-package com.example.helloworld;
+package com.example.starter;
 
+import com.example.starter.R;
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import android.support.v7.app.AppCompatActivity
 
 /*
  * 'Main Activity' for Hello World sample app
